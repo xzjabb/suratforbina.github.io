@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Maaf dari Hatiku</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Playfair+Display:wght@500&display=swap');
+        
+        .letter {
+            display: none;
+        }
+        
+        .letter.active {
+            display: block;
+        }
+        
+        .navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .nav-button {
+            background: #e67e7e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+        
+        .nav-button:hover {
+            background: #d46a6a;
+        }
+        
+        .nav-button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        body {
+            background: #f9f3f3;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Playfair Display', serif;
+            color: #5a3e36;
+        }
+
+        .envelope {
+            background: #fff5f5;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
+            margin: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .letter {
+            background: white;
+            padding: 25px;
+            margin: 15px 0;
+            border-left: 5px solid #e67e7e;
+            transform: translateY(20px);
+            opacity: 0;
+            animation: slideUp 0.8s forwards;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .letter:hover {
+            transform: scale(1.02);
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .letter:nth-child(1) { animation-delay: 0.3s; }
+        .letter:nth-child(2) { animation-delay: 0.6s; }
+        .letter:nth-child(3) { animation-delay: 0.9s; }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            color: #e67e7e;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        .heart {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background: #e67e7e;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .special-message {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(230, 126, 126, 0.1);
+            border-radius: 10px;
+            animation: fadeIn 2s 2s forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: #e67e7e;
+            color: white;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background: #d46a6a;
+        }
+    </style>
+</head>
+<body>
+    <div class="envelope">
+        <div class="letter active">
+            <div class="heart">💌</div>
+            <h1>Surat Pertama</h1>
+            <p>Sayang..<br><br>
+            Aku sengaja buat website ini karna aku tau, aku gabisa apa apa lagi dan usaha ini yang aku bisa sayangg. aku takut kalau aku panjang lebar di chat bubble malah kamunya juga yang tambah bete takutnya sayang..., maka dari itu aku buatkan surat web sederhana ini buat kamu walaupun buatnya dadakan jadinya ga begitu bagus ya sayanggg..</p>
+        </div>
+
+        <div class="letter">
+            <div class="heart">💖</div>
+            <h1>Surat Kedua</h1>
+            <p>Aku tau sebenernya aku ngelakuin kesalahan semalam sayang yang ngebuat kamu bete dan marah sama aku, tapi aku gatau apa permasalahan yang bikin kamu marah dan yang aku tau itu cuma aku ninggalin kamu tidur, dan alasan kenapa semalem aku langsung tidur karna aku mencoba berfikir positif ke kamu kalau kamu emang lagi cape, dan ternyata aku salah sayangg... sayang maaf kalau sudah bikin kamu marah dan kesel ya sayang, aku gatau kalau kamu emang lagi marah sama aku sebenernnya sayang dan aku rasa kamu layak buat marah ke aku sayang...</p>
+        </div>
+
+        <div class="letter">
+            <div class="heart">❤️</div>
+            <h1>Surat Terakhir</h1>
+            <p>Dengan sebesar sebesarnya dan sejujur jujurnya, aku meminta maaf sama kamu sekali lagi ya sayang atas apa yang aku lakuin ke kamu yang bikin kamu marah dan bete dan badmood sayangg... aku tau kesalahan aku dan maka dari itu aku meminta maaf ke kamu sayangg, aku minta maaf belum bisa menjadi cowo yang selamanya menyenangkan sayangg, yang aku lakuin cuma yang terbaik buat kamu sayangg. maaf sayang kalau aku masih ada banyak salah ke kamu sayangg dan disini aku bener bener minta maaf atas segala kesalahan aku dari awal maupun sampai sekarang sayanggg. dan satu lagi, aku mengakui kesalahan aku sayang dari yang semalem ya sayanggg,,, maafin aku aku bener bener minta maaf sayan. i love you</p>
+        </div>
+
+        <div class="special-message" style="display: none;">
+            <h2>Makasih sudah meluangkan waktunya buat baca surat ini</h2>
+            <p>Maafin aku ya sayang</p>
+            <a href="https://wa.me/+6289603208182" class="button">Chat aku ya sayang..</a>
+        </div>
+        <div class="navigation">
+            <button class="nav-button" id="prevBtn" disabled>Previous</button>
+            <button class="nav-button" id="nextBtn">Next</button>
+        </div>
+    </div>
+
+    <script>
+        const letters = document.querySelectorAll('.letter');
+        const specialMessage = document.querySelector('.special-message');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentIndex = 0;
+
+        function showLetter(index) {
+            letters.forEach((letter, i) => {
+                letter.classList.toggle('active', i === index);
+            });
+            
+            prevBtn.disabled = index === 0;
+            nextBtn.disabled = index === letters.length - 1;
+            
+            if (index === letters.length - 1) {
+                specialMessage.style.display = 'block';
+            } else {
+                specialMessage.style.display = 'none';
+            }
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                showLetter(currentIndex);
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < letters.length - 1) {
+                currentIndex++;
+                showLetter(currentIndex);
+            }
+        });
+
+        // Initialize first letter
+        showLetter(0);
+    </script>
+</body>
+</html>
